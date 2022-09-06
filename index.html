@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/ab62c23023.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
@@ -13,21 +18,19 @@
     <title>Página Inicial</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <!-- Começo barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
+        <div class="container px=5">
             <a class="navbar-brand" href="index.html">&#128126; Luiz Soares &#128126; </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home
-                            <span class="visually-hidden">(current)</span>
-                        </a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre mim</a>
@@ -50,40 +53,48 @@
     </nav>
     <!-- Fim da barra de navegação -->
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col align-self-center">
-                <div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
-                    <div class="card-body">
-                        <img src="img/luizsoares.jpg" class="card-img-top mb-3" alt="">
-                        <h4 class="card-title ">Luiz Henrique Soares</h4>
+    <!-- Header-->
+    <header class="bg-primary py-5">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+
+                <div class="col-xl-5 col-xxl-6 text-center align-items-center justify-content-center">
+                    <div class="card text-white bg-light" style="max-width: 30rem;">
+                        <div class="card-body">
+                            <img src="img/luizsoares.jpg" class="card-img-top my-5" alt="">
+                            <h4 class="card-title text-primary">Luiz Henrique Soares</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col d-flex flex-column">
-
-                <div class="">
-                    <span id="target" class="h2"></span>
-                    <!-- <span id="cursor" class="h2"></span> -->
-                </div>
-
-                <div class="align-self-end">
-                    <div class="col">
-                        <button type="button" class="btn btn-primary" style="background-color: #E1306C;">
-                            <i class="fa-brands fa-instagram"></i> Instagram</button>
-                        <button type="button" class="btn btn-dark"><i class="fa-brands fa-github"></i>
-                            GitHub</button>
-                        <button type="button" class="btn btn-info"><i class="fa-brands fa-linkedin"></i>
-                            LinkedIn</button>
-                        <button type="button" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i>
-                            Whatsapp</button>
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start" style="height: 200px;">
+                        <h2 class="display-20 fw-bolder text-white mb-2">Eu sou <span id="target" class=""></span>
+                            <span id="cursor" class=""></span>
+                        </h2>
+                    </div>
+                    <div class="mt-auto mx-auto">
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <button type="button" class="btn btn-info btn-block"><i
+                                    class="fa-brands fa-twitter fa-xl"></i></button>
+                            <button type="button" class="btn btn-primary btn-block"
+                                style="background-color: #E1306C;"><i class="fa-brands fa-instagram fa-xl"></i></button>
+                            <button type="button" class="btn btn-info btn-block"><i
+                                    class="fa-brands fa-linkedin fa-xl"></i></button>
+                            <button type="button" class="btn btn-dark btn-block"><i
+                                    class="fa-brands fa-github fa-xl"></i></button>
+                            <button type="button" class="btn btn-success btn-block"><i
+                                    class="fa fa-whatsapp fa-xl"></i></button>
+                            <button type="button" class="btn btn-danger btn-block"><i
+                                    class="fa fa-file-pdf fa-xl"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
+    <!-- Fim do Header -->
 
 
     <script type="text/javascript" src="js/typingeffect.js"> </script>

@@ -72,7 +72,7 @@
     $.extend({
         teletype: {
             defaults: {
-                delay: 100,
+                delay: 125,
                 pause: 5000,
                 text: []
             }
@@ -85,21 +85,15 @@
 
 $('#target').teletype({
     text: [
-        'Me chamo Luiz Henrique Soares. Sou estudante de Engenharia de Software.',
-        'Eu sou estágiario de Desenvolvimento WEB',
-        'Apaixonado pelo universo Star Wars e Jedi nas horas vagas.',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        ''
+        ' Estudante de Engenharia de Software pela Universidade de Brasília',
+        ' Estagiário de Desenvolvimento de Software',
+        ' apaixonado no universo Star Wars e Jedi nas horas vagas.',
+        ' '
     ]
 });
 
 $('#cursor').teletype({
-    text: ['|', ' '],
+    text: ['_'],
     delay: 0,
     pause: 500
 });
