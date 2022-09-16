@@ -15,6 +15,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
     <title>Página Inicial</title>
 </head>
 
@@ -56,9 +62,8 @@
     <!-- Header-->
     <header class="bg-primary py-5">
         <div class="container px-5">
-            <div class="row gx-5 align-items-center justify-content-center">
-
-                <div class="col-xl-5 col-xxl-6 text-center align-items-center justify-content-center">
+            <div class="row d-flex-center text-center">
+                <div class="col-sm-12 col-md-6 text-center align-items-center justify-content-center">
                     <div class="card text-white bg-light" style="max-width: 30rem;">
                         <div class="card-body">
                             <img src="img/luizsoares.jpg" class="card-img-top my-5" alt="">
@@ -67,27 +72,42 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                    <div class="my-5 text-center text-xl-start" style="height: 200px;">
-                        <h2 class="display-20 fw-bolder text-white mb-2">Eu sou <span id="target" class=""></span>
+                <div class="col-sm-12 col-md-6 col-md-offset-1 mx-auto">
+
+                    <div class="my-5 text-center text-xl-start p-4 text-center w-200">
+                        <h2 class="fw-bolder text-white" style="height:150px;">
+                            Eu sou
+                            <span id="target" class=""></span>
                             <span id="cursor" class=""></span>
                         </h2>
                     </div>
-                    <div class="mt-auto mx-auto">
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                            <button type="button" class="btn btn-info btn-block"><i
-                                    class="fa-brands fa-twitter fa-xl"></i></button>
-                            <button type="button" class="btn btn-primary btn-block"
-                                style="background-color: #E1306C;"><i class="fa-brands fa-instagram fa-xl"></i></button>
-                            <button type="button" class="btn btn-info btn-block"><i
-                                    class="fa-brands fa-linkedin fa-xl"></i></button>
-                            <button type="button" class="btn btn-dark btn-block"><i
-                                    class="fa-brands fa-github fa-xl"></i></button>
-                            <button type="button" class="btn btn-success btn-block"><i
-                                    class="fa fa-whatsapp fa-xl"></i></button>
-                            <button type="button" class="btn btn-danger btn-block"><i
-                                    class="fa fa-file-pdf fa-xl"></i></button>
-                        </div>
+
+                    <div class="p-auto text-center w-200">
+                        <!-- Twitter -->
+                        <a class="btn btn-primary m-1" style="background-color: #55acee;" href="#!" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Twitter :)"><i class="fab fa-twitter"></i></a>
+                        <!-- Instagram -->
+                        <a class="btn btn-primary m-1" style="background-color: #E1306C;" href="#!" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Insta :P"><i class="fab fa-instagram"></i></a>
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary m-1" style="background-color: #0082ca;" href="#!" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu perfil no LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Spotify -->
+                        <a class="btn btn-primary m-1" style="background-color: #1DB954;" href="#!" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu gosto musical duvidoso no Spotify"><i class="fab fa-spotify"></i></a>
+                        <!-- Stack overflow -->
+                        <a class="btn btn-primary m-1" style="background-color: #ffac44;" href="#!" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Onde eu recorro quando estou perdido"><i class="fab fa-stack-overflow"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-primary m-1" style="background-color: #333333;" href="#!" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meus repositórios e projetos no GitHub"><i class="fab fa-github"></i></a>
+                        <!-- Reddit -->
+                        <a class="btn btn-primary m-1" style="background-color: #ff4500;" href="#!" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Memes e programação"><i class="fab fa-reddit-alien"></i></a>
+                        <!-- Whatsapp -->
+                        <a class="btn btn-primary m-1" style="background-color: #25d366;" href="#!" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Entre em contato comigo :)"><i class="fab fa-whatsapp"></i></a>
+
                     </div>
                 </div>
             </div>
@@ -96,14 +116,18 @@
 
     <!-- Fim do Header -->
 
+    <!-- Section Sobre -->
 
+    <section class="container py-5">
+        <div class="container px-5">
+
+        </div>
+    </section>
+
+    <!-- Fim Section Sobre -->
+
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"> </script>
     <script type="text/javascript" src="js/typingeffect.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
