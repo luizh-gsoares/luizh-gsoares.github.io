@@ -1,0 +1,10 @@
+h2 {
+  text-align: center;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
