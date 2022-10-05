@@ -28,7 +28,7 @@
 
 <body class="d-flex flex-column h-100">
     <!-- Começo barra de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="home">
         <div class="container px-5">
             <a class="navbar-brand" href="index.html">&#128126; Luiz Soares </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
@@ -38,16 +38,16 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Minha jornada</a>
+                        <a class="nav-link" href="#jornada">Minha jornada</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfólio</a>
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -56,9 +56,9 @@
     <!-- Fim da barra de navegação -->
 
     <!-- Header-->
-    <header class="bg-primary py-5">
+    <header class="bg-primary py-5" >
         <div class="container px-5">
-            <div class="row d-flex-center text-center">
+            <div class="row d-flex-center text-center" >
                 <div class="col-sm-12 col-md-6 text-center align-items-center justify-content-center">
                     <div class="card text-white bg-light" style="max-width: 25rem;">
                         <div class="card-body">
@@ -79,19 +79,19 @@
 
                     <div class="row-cols-5 p-auto text-center w-200">
                         <!-- Twitter -->
-                        <a class="btn btn-primary m-1" style="background-color: #55acee;" href="#!" role="button"
+                        <a class="btn btn-primary m-1" style="background-color: #55acee;" href="https://www.twitter.com/luizhgsoares" role="button"
                             data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Twitter :)"><i
                                 class="fab fa-twitter"></i></a>
                         <!-- Instagram -->
-                        <a class="btn btn-primary m-1" style="background-color: #E1306C;" href="#!" role="button"
+                        <a class="btn btn-primary m-1" style="background-color: #E1306C;" href="https://www.instagram.com/luizh.gsoares" role="button"
                             data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Insta :P"><i
                                 class="fab fa-instagram"></i></a>
                         <!-- Linkedin -->
-                        <a class="btn btn-primary m-1" style="background-color: #0082ca;" href="#!" role="button"
+                        <a class="btn btn-primary m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/luizh-gsoares" role="button"
                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                             data-bs-title="Meu perfil no LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <!-- Spotify -->
-                        <a class="btn btn-primary m-1" style="background-color: #1DB954;" href="#!" role="button"
+                        <a class="btn btn-primary m-1" style="background-color: #1DB954;" href="" role="button"
                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                             data-bs-title="Meu gosto musical duvidoso no Spotify"><i class="fab fa-spotify"></i></a>
                         <!-- Stack overflow -->
@@ -100,7 +100,7 @@
                             data-bs-title="Onde eu recorro quando estou perdido"><i
                                 class="fab fa-stack-overflow"></i></a>
                         <!-- Github -->
-                        <a class="btn btn-primary m-1" style="background-color: #333333;" href="#!" role="button"
+                        <a class="btn btn-primary m-1" style="background-color: #333333;" href="https://www.github.com/luizh-gsoares" role="button"
                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                             data-bs-title="Meus repositórios e projetos no GitHub"><i class="fab fa-github"></i></a>
                         <!-- Reddit -->
@@ -121,8 +121,8 @@
 
     <!-- Seção Minha Jornada -->
 
-    <section class="container py-5 bg-secondary bg-gradient">
-        <div class="container px-5">
+    <section class="container py-5 bg-secondary bg-gradient" id="jornada">
+        <div class="container px-5" >
 
             <div class="text-center">
                 <hr>
@@ -261,11 +261,11 @@
     <!-- Fim Seção Minha Jornada -->
 
     <!-- Seção Portfólio -->
-    <section class="py-5 bg-primary bg-gradient">
+    <section class="py-5 bg-primary" id="portfolio">
         <div class="container px-5">
-            <div class="row gx-5 align-items-center">
+            <div class="row gx-5 align-items-center" >
                 <div class="col-lg-6 order-lg-2">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="img/github.png" alt="..." /></div>
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="img/portfolio.png" alt="..." /></div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="p-5">
@@ -275,6 +275,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- Fim da Seção Portfólio -->
