@@ -1,9 +1,10 @@
-#portfolio,#contato h1 {
+#portfolio h1 {
   text-align: center;
+  color: white;
 }
 
-#portfolio h1 {
-  color: white;
+#contato h1 {
+  text-align: center;
 }
 
 #portfolio hr {
