@@ -1,5 +1,13 @@
-h2 {
+#portfolio,#contato h1 {
   text-align: center;
+}
+
+#portfolio h1 {
+  color: white;
+}
+
+#portfolio hr {
+  color: white;
 }
 
 .d-flex-center {

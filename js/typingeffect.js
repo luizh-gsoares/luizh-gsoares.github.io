@@ -86,9 +86,10 @@
 $('#target').teletype({
     text: [
         ' Oi, eu sou o Luiz e sou Estudante de Engenharia de Software.',
-        ' Eu sou um jovem padawan no Desenvolvedor WEB. ',
+        ' Eu sou um jovem padawan em Desenvolvimento de Software. ',
         ' Apaixonado no universo Star Wars e Jedi nas horas vagas.',
         ' Eu sou Fã de carteirinha da banda The Lumineers.',
+        ' Eu sou construtor de casinhas medievais no Minecraft.',
         ' E por fim, mas não menos importante, sou um amante de café.'
 
     ]
