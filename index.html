@@ -13,17 +13,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--<script src="https://kit.fontawesome.com/ab62c23023.js" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+        integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/script.js"> </script>
     <title>Luiz Soares</title>
 </head>
 
@@ -71,9 +73,7 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-12 col-md-6 col-md-offset-1 mx-auto">
-
                     <div class="my-5 text-center text-xl-start text-center w-200">
                         <h2 class="fw-bolder text-white text-center" style="height:150px;">
                             <span id="target" class=""></span>
@@ -81,65 +81,41 @@
                         </h2>
                     </div>
 
-                    <div class="row-cols-6">
+                    <div class="container text-center">
                         <!-- Twitter -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com/luizhgsoares"
-                            role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Twitter" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+                        <a class="btn" href="https://www.twitter.com/luizhgsoares" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Twitter"
+                            target="_blank"><i class="fab fa-x-twitter fa-2x" style="color: #FFFFFF;"></i></a>
+
                         <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/luizh.gsoares"
-                            role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Instagram" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                        <a class="btn" href="https://www.instagram.com/luizh.gsoares" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Instagram"
+                            target="_blank"><i class="fab fa-instagram fa-2x" style="color: #FFFFFF;"></i></a>
+
                         <!-- Linkedin -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/luizh-gsoares"
-                            role="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu perfil no LinkedIn" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <!-- Spotify -->
-                        <a class="btn btn-outline-light btn-floating m-1"
-                            href="https://open.spotify.com/playlist/2b4qeV80pq09ZE8tSuFna5?si=887637c8d2b14944" role="button"
-                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu gosto musical duvidoso no Spotify" target="_blank">
-                            <i class="fab fa-spotify"></i>
-                        </a>
-                        <!-- DEV -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://dev.to/luizhgsoares" role="button"
-                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Blog no DEV" target="_blank">
-                            <i class="fab fa-dev"></i>
-                        </a>
+                        <a class="btn" href="https://www.linkedin.com/in/luizh-gsoares" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu perfil no LinkedIn"
+                            target="_blank"><i class="fab fa-linkedin-in fa-2x" style="color: #FFFFFF;"></i></a>
+
                         <!-- Github -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/luizh-gsoares" role="button" 
-                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Meus repositórios e projetos no GitHub" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <!-- CodePen -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meus pens no CodePen" target="_blank">
-                            <i class="fab fa-codepen"></i>
-                        </a>
-                        <!-- FreeCodeCamp -->
-                        <a class="btn btn-outline-light btn-floating m-1"
-                            href="https://www.freecodecamp.org/luizh-gsoares" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Meu perfil no FreeCodeCamp" target="_blank">
-                            <i class="fab fa-free-code-camp"></i>
-                        </a>
+                        <a class="btn" href="https://www.github.com/luizh-gsoares" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Meus repositórios no GitHub" target="_blank"><i class="fab fa-github fa-2x"
+                                style="color: #FFFFFF;"></i></a>
+
+                        <!-- Email -->
+                        <a class="btn" href="mailto:luizhenriquesoares18@hotmail.com" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" data-bs-title="Enviar um e-mail"><i class="fa fa-envelope fa-2x"
+                                style="color: #FFFFFF;"></i></a>
+
                         <!-- PDF Curriculo -->
-                        <a class="btn btn-outline-light btn-floating m-1"
-                            href="mailto:luizhenriquesoares18@hotmail.com"  data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Download do meu currículo">
-                            <i class="fa fa-envelope"></i>
-                        </a>
-                        <!-- PDF Curriculo -->
-                        <a class="btn btn-outline-light btn-floating m-1"
-                            href="Downloads/Currículo Luiz Henrique.pdf" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Download do meu currículo" target="_blank">
-                            <i class="fa fa-file"></i>
-                        </a>
+                        <a class="btn" href="Downloads/Currículo Luiz Henrique.pdf" role="button"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Download CV"
+                            target="_blank"><i class="fa fa-file fa-2x" style="color: #FFFFFF;"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <!-- Fim do Header -->
@@ -166,8 +142,10 @@
                             <h4 class="timeline-title">Atendente RaiaDrogasil S.A</h4>
                         </div>
                         <div class="timeline-body">
-                            <p> <i>Novembro de 2018 a Janeiro de 2022-</i> 
-                                Iniciei minha carreira como Jovem Aprendiz na empresa RaiaDrogasil durante o Ensino Médio. Foi uma experiência que contribuiu para meu desenvolvimento pessoal e me abriu oportunidades através do curso de aprendizagem, onde conheci professores inspiradores e descobri novas áreas de interesse. Tenho orgulho de ter feito parte dessa equipe.
+                            <p> <i>Novembro de 2018 a Janeiro de 2022-</i>
+                                Iniciei minha carreira como Jovem Aprendiz na empresa RaiaDrogasil durante o Ensino
+                                Médio. Foi uma experiência que contribuiu para meu desenvolvimento pessoal e me abriu
+                                oportunidades através do curso de aprendizagem.
                             </p>
                         </div>
                     </div>
@@ -182,9 +160,8 @@
                             <h4 class="timeline-title">CIL Taguatinga</h4>
                         </div>
                         <div class="timeline-body">
-                            <p><i>Fevereiro de 2016 a Dezembro de 2021 - </i>Conclui o curso de Inglês Avançado no
-                                Centro Interescolar
-                                de Línguas de Taguatinga.</p>
+                            <p><i>Fevereiro de 2016 a Dezembro de 2021 - </i>
+                                Conclui o curso de Inglês no Centro Interescolar de Línguas de Taguatinga.</p>
                         </div>
 
                     </div>
@@ -196,11 +173,13 @@
                     </div>
                     <div class="timeline-panel animated slideInLeft">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Escola Técnica de Brasília - ETB</h4>
+                            <h4 class="timeline-title">Escola Técnica de Brasília (ETB)</h4>
                         </div>
                         <div class="timeline-body">
-                            <p> <i>Janeiro de 2020 a Dezembro de 2022 - </i> 
-                                Iniciei minha jornada no desenvolvimento de software na ETB, onde me formei Técnico em Informática. Aprendi linguagens como Java, PHP, HTML e CSS, que foram a base para iniciar meus estudos nessa área.</p>
+                            <p> <i>Janeiro de 2020 a Dezembro de 2022 - </i>
+                                Iniciei minha jornada no desenvolvimento de software na ETB, onde me formei Técnico em
+                                Informática. Aprendi linguagens como Java, PHP, HTML e CSS, que foram a base para
+                                iniciar meus estudos nessa área.</p>
                         </div>
                     </div>
                 </li>
@@ -212,7 +191,7 @@
                     </div>
                     <div class="timeline-panel animated slideInRight">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Universidade de Brasília - UnB</h4>
+                            <h4 class="timeline-title">Universidade de Brasília (UnB)</h4>
                         </div>
                         <div class="timeline-body">
                             <p><i>Janeiro de 2022 - </i>Ingressei no curso de Engenharia de Software na
@@ -228,12 +207,13 @@
                     </div>
                     <div class="timeline-panel animated slideInLeft">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Estagiário - Desenvolvimento WEB</h4>
+                            <h4 class="timeline-title">Estágio - Programador .NET</h4>
                         </div>
                         <div class="timeline-body">
-                            <p><i>Julho de 2022 - </i> Tive a oportunidade de trabalhar com uma variedade de ferramentas importantes
-                                para O desenvolvimento de software, como O Visual Studio 2022, .NET, ASP.NET,
-                                C#, EntityFramework, Microsoft SQL Server, Docker e Git. 
+                            <p><i>Julho de 2022 - </i> Tive a oportunidade de trabalhar com uma variedade de ferramentas
+                                importantes para O desenvolvimento de software, como O Visual Studio 2022, .NET,
+                                ASP.NET,
+                                C#, EntityFramework, Microsoft SQL Server, Docker e Git.
                 </li>
 
                 <li class="timeline-inverted">
@@ -246,28 +226,11 @@
                             <h4 class="timeline-title">Desenvolvedor Freelancer</h4>
                         </div>
                         <div class="timeline-body">
-                            <p><i>Outubro de 2022 - </i> 
-                                Participo de projetos em colaboração com um grupo de amigos, buscando aprimorar meus conhecimentos e desenvolver minhas habilidades profissionais.</p>
+                            <p><i>Outubro de 2022 - </i>
+                                Participo de projetos em colaboração com um grupo de amigos, buscando aprimorar meus
+                                conhecimentos e desenvolver minhas habilidades profissionais.</p>
                         </div>
                 </li>
-
-                <!-- <li class="timeline-inverted">
-                    <div class="timeline-badge">
-                        <span>2009<span>
-                    </div>
-                    <div class="timeline-panel animated slideInRight">
-                        <div class="timeline-heading">
-                            <img class="img-responsive" src="http://www.ygoex.com/assets/img/loros.jpg" />
-                            <h4 class="timeline-title">Title 5</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá ,
-                                depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum
-                                girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.</p>
-                        </div>
-
-                    </div>
-                </li> -->
 
                 <li class="clearfix" style="float: none;"></li>
             </ul>
@@ -284,86 +247,24 @@
                     <hr>
                     <h1>Portfólio</h1>
                     <hr>
-                    <p class="my-5 text-white">Abaixo você consegue conferir os meus principais projetos :</p>
+                    <p class="my-5 text-white">Abaixo você consegue conferir os meus repositórios do GitHub :</p>
                 </div>
 
-                <div class="justify-content-center card-group">
 
-                    <div class="card bg-secondary mb-3 mx-3" style="max-width: 20rem;" data-toggle="modal" data-target="#myModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200"
-                            aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
-                            viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
-                            <rect width="100%" height="100%" fill="#868e96"></rect>
-                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-                        </svg>
-                        <div class="card-header">Projeto MWN Churrasqueiras</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Secondary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Modal body text goes here.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card bg-secondary mb-3 mx-3" style="max-width: 20rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%"
-                            height="200" aria-label="Placeholder: Image cap" focusable="false" role="img"
-                            preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180"
-                            style="font-size:1.125rem;text-anchor:middle">
-                            <rect width="100%" height="100%" fill="#868e96"></rect>
-                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-                        </svg>
-                        <div class="card-header">Sistema de Gestão de RH</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Secondary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-
-                    <div class="card bg-secondary mb-3 mx-3" style="max-width: 20rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%"
-                            height="200" aria-label="Placeholder: Image cap" focusable="false" role="img"
-                            preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180"
-                            style="font-size:1.125rem;text-anchor:middle">
-                            <rect width="100%" height="100%" fill="#868e96"></rect>
-                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-                        </svg>
-                        <div class="card-header">Projeto OSJC</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Secondary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
+                <div id="repo-container" class="card-columns">
+                    <script>
+                        buscarRepositorios();
+                    </script>
                 </div>
-
-                <div class="my-5 text-center">
-                    <button class="btn btn-secondary" type="button" href="projetos.html">Ver mais projetos</button>
-                </div>
-
             </div>
+
+
+            <div class="my-5 text-center">
+                <button class="btn btn-secondary" type="button" href="projetos.html">Ver mais projetos</button>
+            </div>
+
+        </div>
         </div>
     </section>
     <!-- Fim da Seção Portfólio -->
@@ -423,15 +324,16 @@
                     role="button"><i class="fab fa-instagram"></i></a>
 
                 <!-- LinkedIn -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/luizh-gsoares" role="button"><i
-                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/luizh-gsoares"
+                    role="button"><i class="fab fa-linkedin-in"></i></a>
 
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/luizh-gsoares" role="button"><i
-                        class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/luizh-gsoares"
+                    role="button"><i class="fab fa-github"></i></a>
 
                 <!-- DEV -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://dev.to/luizhgsoares" role="button"><i class="fab fa-dev"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://dev.to/luizhgsoares" role="button"><i
+                        class="fab fa-x-twitter"></i></a>
             </section>
             <!-- Section: Social media -->
         </div>
