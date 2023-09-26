@@ -1,62 +1,77 @@
 // -------------------------------------------
 //   Autor: Luiz Soares
-//   Copyright (c) 2022 Luiz Soares
+//   Copyright (c) 2023 Luiz Soares
 // -------------------------------------------
-const usuario = "luizh-gsoares";
 
+
+// Caso não seja informado um usuário, o padrão será "luizh-gsoares".
+var usuario = "luizh-gsoares";
+
+// Faz uma solicitação GET à API do GitHub para obter os repositórios de um determinado usuário.
+function requestRepositorios(usuario) {
+    return $.get(`https://api.github.com/users/${usuario}/repos`);
+}
+
+// Cria uma div com todas as informações do repositório recebido. Caso tenha mais informações do repositorio, basta adicionar no HTML.
+// Acesse o link para ver todas as informações disponíveis: https://docs.github.com/en/rest/reference/repos#list-repositories-for-a-user
+function criarRepositorioCard(repo) {
+    var repo_topics = repo.topics || [];
+
+    // Se o repositório tiver o tópico "esconder", ele não será exibido.
+    if (repo_topics.includes("esconder")) {
+        return null;
+    }
+
+    var repo_description = repo.description || "<p>Sem descrição.</p>"; 
+    var repo_language = repo.language || "--";
+    var repo_created_at = new Date(repo.created_at).toLocaleDateString();
+
+    // Cria uma string com todos os tópicos do repositório.
+    var topicsHTML = repo_topics.map(topic => `<span class='badge rounded-pill bg-dark'>${topic}</span>`).join(' ');
+
+    return `
+        <div class='col' id='${repo.id}'>
+            <div class='card h-100'>
+                <div class='card-body'>
+                    <h5 class='card-title'><i class='fa-solid fa-book fa-lg'></i> ${repo.name}</h5>
+                    ${topicsHTML}
+                    <p class='card-text'>${repo_description}</p>
+                    <p class='text-white'><a href='${repo.html_url}' class='stretched-link'></a></p>
+                </div>
+                <div class= 'card-footer'>
+                    <p class='text-muted'>Linguagem : ${repo_language}</p>
+                    <small class='text-muted'> Criado em : ${repo_created_at}</small>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// Exibe os repositórios recebidos na tela.
+function exibirRepositorios(repositorios) {
+    var repoContainer = $("#repo-container");
+    if (!Array.isArray(repositorios) || !repositorios.length) {
+        repoContainer.append("<div class='alert alert-danger'> Houve um erro ao listar os repositórios do GitHub.</div>");
+    } else {
+        for (var repo of repositorios) {
+            var repoCardHTML = criarRepositorioCard(repo);
+            if (repoCardHTML) {
+                repoContainer.append(repoCardHTML);
+            }
+        }
+    }
+}
+
+// Busca os repositórios do usuário informado e os exibe na tela.
 function buscarRepositorios() {
-    var requestURL = 'https://api.github.com/users/' + usuario + '/repos';
-    var request = $.get(requestURL, function () {
-    })
-        .done(function () {
-            request = request.responseJSON;
-            if (!Array.isArray(request) || !request.length) {
-                $("#repo-container").append("<div class='alert alert-danger'> Houve um erro ao listar os repositórios do GitHub.</div>");
-            }
-            else {
-                for (i = 0; i < request.length; i++) {
-                    // Variáveis para armazenar informações do repositório, caso queira alguma que não esteja aqui
-                    // Acessar documentação do GitHub API em https://docs.github.com/en/rest?apiVersion=2022-11-28
-                    var repo_url = request[i].html_url;
-                    var repo_name = request[i].name;
-                    var repo_description = request[i].description;
-                    var repo_created_at = new Date(request[i].created_at).toLocaleDateString();
-                    var repo_language = request[i].language;
-                    var repo_topics = request[i].topics;
-
-                    // Verifica se o repositório contém um tópico 'esconder', se sim, não exibe o repositório.
-                    if (repo_topics == 'esconder') {
-                        continue;
-                    }
-
-                    // Verifica se o repositório não contém descrição ou linguagem.
-                    if (repo_description == null) {
-                        repo_description = "<p>Sem descrição.</p>";
-                    }
-                    
-                    if (repo_language == null) {
-                        repo_language = "-";
-                    }
-
-
-                    // Colocar o repositório na página como div
-                    $("#repo-container").append(
-                        "<div class='col'>"
-                        + "<div class='card h-100'>"
-                        + "<div class='card-body'>"
-                        + "<h5 class='card-title'><i class='fa-solid fa-code-branch'></i> " + repo_name + "</h5>"
-                        + "<h6 class='card-subtitle text-muted'>"+ repo_topics +"</h6>"
-                        + "<p class='card-text'>" + repo_description + "</p>"
-                        + "</div>"
-                        + "<div class= 'card-footer'>"
-                        + "<p class='text-white'><a href='"+ repo_url +"' class='stretched-link'></a></p>"
-                        + "<p class='card-text'>Linguagem : " + repo_language + "</p>"
-                        + "<small class='text-muted'> Criado em : " + repo_created_at + "</small>"
-                        + "</div>"
-                        + "</div>"
-                        + "</div>"
-                        + "</div>");
-                }
-            }
+    requestRepositorios(usuario)
+        .done(function (data) {
+            var repositorios = data;
+            exibirRepositorios(repositorios);
+        })
+        .fail(function () {
+            $("#repo-container").append("<div class='alert alert-danger'> Houve um erro ao listar os repositórios do GitHub.</div>");
         });
 }
+
+// Chame a função buscarRepositorios() para iniciar o processo.
