@@ -248,13 +248,15 @@
                     <h1>Portfólio</h1>
                     <hr>
                     <p class="my-5 text-white">Abaixo você consegue conferir os meus repositórios do GitHub: </p>
+                    <div id="filter-topics" class="my-5"></div>
                 </div>
 
+                
+
                 <div id="repo-container" class="row row-cols-1 row-cols-md-3 g-4">
-                    <script>
-                        buscarRepositorios();
-                    </script>
                 </div>
+
+                <div id="error-message" class="text-center"></div>
             </div>
         </div>
 
@@ -347,10 +349,14 @@
     </footer>
     <!-- Fim do Footer -->
 
+    <script>
+        buscarRepositorios();
+    </script>
+    
     <!-- Arquivos Javascript -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/typingeffect.js"> </script>
-    <script type="text/javascript" src="js/index.js"> </script>
+    <script type="text/javascript" src="js/filter.js"></script>
 </body>
 
 </html>
