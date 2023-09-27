@@ -1,23 +1,6 @@
-#portfolio h1 {
-  text-align: center;
-  color: white;
-}
-
-#contato h1 {
-  text-align: center;
-}
-
-#portfolio hr {
-  color: white;
-}
-
 .d-flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: justify;
-}
-
-.bg-gradient {
-  background-image: var(--bs-gradient);
 }
