@@ -83,35 +83,70 @@
 
                     <div class="container text-center">
                         <!-- Twitter -->
-                        <a class="btn" href="https://www.twitter.com/luizhgsoares" role="button"
-                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Twitter"
-                            target="_blank"><i class="fab fa-x-twitter fa-2x" style="color: #FFFFFF;"></i></a>
+                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Twitter">
+                            <a class="btn" href="https://www.twitter.com/luizhgsoares" role="button" target="_blank">
+                                <i class="fab fa-x-twitter fa-2x" style="color: #FFFFFF;"></i>
+                            </a>
+                        </span>
 
                         <!-- Instagram -->
-                        <a class="btn" href="https://www.instagram.com/luizh.gsoares" role="button"
-                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Instagram"
-                            target="_blank"><i class="fab fa-instagram fa-2x" style="color: #FFFFFF;"></i></a>
+                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Instagram">
+                            <a class="btn" href="https://www.instagram.com/luizh.gsoares" role="button" target="_blank">
+                                <i class="fab fa-instagram fa-2x" style="color: #FFFFFF;"></i>
+                            </a>
+                        </span>
 
                         <!-- Linkedin -->
-                        <a class="btn" href="https://www.linkedin.com/in/luizh-gsoares" role="button"
-                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu perfil no LinkedIn"
-                            target="_blank"><i class="fab fa-linkedin-in fa-2x" style="color: #FFFFFF;"></i></a>
+                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu perfil no LinkedIn">
+                            <a class="btn" href="https://www.linkedin.com/in/luizh-gsoares" role="button" target="_blank">
+                                <i class="fab fa-linkedin-in fa-2x" style="color: #FFFFFF;"></i>
+                            </a>
+                        </span>
 
                         <!-- Github -->
-                        <a class="btn" href="https://www.github.com/luizh-gsoares" role="button"
-                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Meus repositórios no GitHub" target="_blank"><i class="fab fa-github fa-2x"
-                                style="color: #FFFFFF;"></i></a>
+                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meus repositórios no GitHub">
+                            <a class="btn" href="https://www.github.com/luizh-gsoares" role="button" target="_blank">
+                                <i class="fab fa-github fa-2x" style="color: #FFFFFF;"></i>
+                            </a>
+                        </span>
 
                         <!-- Email -->
-                        <a class="btn" href="mailto:luizhenriquesoares18@hotmail.com" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" data-bs-title="Enviar um e-mail"><i class="fa fa-envelope fa-2x"
-                                style="color: #FFFFFF;"></i></a>
+                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enviar um e-mail">
+                            <a class="btn" href="mailto:luizhenriquesoares18@hotmail.com">
+                                <i class="fa fa-envelope fa-2x" style="color: #FFFFFF;"></i>
+                            </a>
+                        </span>
 
                         <!-- PDF Curriculo -->
-                        <a class="btn" href="Downloads/Currículo Luiz Henrique.pdf" role="button"
-                            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Download CV"
-                            target="_blank"><i class="fa fa-file fa-2x" style="color: #FFFFFF;"></i></a>
+                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Download CV">
+                            <a class="btn" href="#" type="button" data-bs-toggle="modal" data-bs-target="#modalcv">
+                                <i class="fa fa-file fa-2x" style="color: #FFFFFF;"></i>
+                            </a>
+                        </span>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalcv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <h5 class="modal-title" id="exampleModalLabel">Download CV</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Button to open the first CV -->
+                                        <a class="btn btn-primary" href="Downloads/CV_LuizHenriqueSoares_PT.pdf" target="_blank" role="button">
+                                            <i class="fa fa-file"></i> CV Português
+                                        </a>
+                                        <!-- Button to open the second CV -->
+                                        <a class="btn btn-primary" href="Downloads/CV_LuizHenriqueSoares_EN.pdf" target="_blank" role="button">
+                                            <i class="fa fa-file"></i> CV English
+                                        </a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,7 +286,7 @@
                     <div id="filter-topics" class="my-5"></div>
                 </div>
 
-                
+
 
                 <div id="repo-container" class="row row-cols-1 row-cols-md-3 g-4">
                 </div>
