@@ -3,8 +3,9 @@
 //   Copyright (c) 2023 Luiz Soares
 // -------------------------------------------
 
-// Array de tópicos disponíveis
-const topics = ["todos", "html", "css", "javascript", "dotnet", "api"];
+// Array de tópicos disponíveis para filtragem
+const topics = ["todos", "html", "js", "mssqlserver", "dotnet", "api", "mvc"];
+
 
 
 // Função que é executada quando o documento HTML estiver completamente carregado
