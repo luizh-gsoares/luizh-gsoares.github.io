@@ -22,9 +22,12 @@ function criarRepositorioCard(repo) {
         return null;
     }
 
-    var repo_description = repo.description || "<p>Sem descrição.</p>"; 
+    var repo_description = repo.description || "<p>Sem descrição.</p>";
     var repo_language = repo.language || "--";
+    var repo_stars = repo.stargazers_count || 0;
+    var repo_forks = repo.forks_count || 0;
     var repo_created_at = new Date(repo.created_at).toLocaleDateString();
+    var repo_homepage = repo.homepage ? "🌎: " + repo.homepage : "";
 
     // Cria uma string com todos os tópicos do repositório.
     var topicsHTML = repo_topics.map(topic => `<span class='badge rounded-pill bg-dark'>${topic}</span>`).join(' ');
@@ -35,12 +38,16 @@ function criarRepositorioCard(repo) {
                 <div class='card-body'>
                     <h5 class='card-title'><i class='fa-solid fa-book fa-lg'></i> ${repo.name}</h5>
                     ${topicsHTML}
-                    <p class='card-text'>${repo_description}</p>
-                    <p class='text-white'><a href='${repo.html_url}' class='stretched-link'></a></p>
+                    <p class='card-text'><a href='${repo.html_url}' class='text-decoration-none'>${repo_description}</a></p>
+                    <p><a href='${repo.homepage}'>${repo_homepage}</a></p>
                 </div>
                 <div class= 'card-footer'>
-                    <p class='text-muted'>Linguagem : ${repo_language}</p>
-                    <small class='text-muted'> Criado em : ${repo_created_at}</small>
+                    <small class='text-muted'>Linguagem : ${repo_language}</small>
+                    <div>
+                        <small class='text-muted'> Criado em : ${repo_created_at}</small>
+                        <small class='text-muted'><i class='fa-regular fa-star'></i> ${repo_stars}</small>
+                        <small class='text-muted'><i class='fa-solid fa-code-fork'></i> ${repo_forks}</small>
+                    </div>
                 </div>
             </div>
         </div>
