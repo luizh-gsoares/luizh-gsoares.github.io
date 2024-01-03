@@ -2,30 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Arquivos de Estilo -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="scss/timeline.scss">
+
+    <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
+
+
+    <!-- Font Awesome CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JQuery JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Popper CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
         integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="js/script.js"> </script>
+
+    <!-- Showdown JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+        integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script charset="UTF-8" type="text/javascript" src="js/script.js"></script>
     <title>Luiz Soares</title>
 </head>
 
@@ -97,14 +118,17 @@
                         </span>
 
                         <!-- Linkedin -->
-                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu perfil no LinkedIn">
-                            <a class="btn" href="https://www.linkedin.com/in/luizh-gsoares" role="button" target="_blank">
+                        <span data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Meu perfil no LinkedIn">
+                            <a class="btn" href="https://www.linkedin.com/in/luizh-gsoares" role="button"
+                                target="_blank">
                                 <i class="fab fa-linkedin-in fa-2x" style="color: #FFFFFF;"></i>
                             </a>
                         </span>
 
                         <!-- Github -->
-                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meus repositórios no GitHub">
+                        <span data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Meus repositórios no GitHub">
                             <a class="btn" href="https://www.github.com/luizh-gsoares" role="button" target="_blank">
                                 <i class="fab fa-github fa-2x" style="color: #FFFFFF;"></i>
                             </a>
@@ -125,7 +149,8 @@
                         </span>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="modalcv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="modalcv" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header text-center">
@@ -133,16 +158,19 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Button to open the first CV -->
-                                        <a class="btn btn-primary" href="downloads/CV_LuizHenriqueSoares_PT.pdf" target="_blank" role="button">
+                                        <a class="btn btn-primary" href="downloads/CV_LuizHenriqueSoares_PT.pdf"
+                                            target="_blank" role="button">
                                             <i class="fa fa-file"></i> CV Português
                                         </a>
                                         <!-- Button to open the second CV -->
-                                        <a class="btn btn-primary" href="downloads/CV_LuizHenriqueSoares_EN.pdf" target="_blank" role="button">
+                                        <a class="btn btn-primary" href="downloads/CV_LuizHenriqueSoares_EN.pdf"
+                                            target="_blank" role="button">
                                             <i class="fa fa-file"></i> CV English
                                         </a>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
                                     </div>
                                 </div>
                             </div>
@@ -297,11 +325,27 @@
 
 
         <div class="my-5 text-center">
-            <a class="btn btn-secondary" href="https://github.com/luizh-gsoares" target="_blank">Ver mais projetos</a>
+            <a class="btn btn-secondary" href="https://github.com/luizh-gsoares" target="_blank"><i
+                    class="fa-brands fa-github"></i> GitHub</a>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="repoModal" tabindex="-1" aria-labelledby="repoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="repoModalLabel"> <i class="fa-solid fa-circle-info"></i> Detalhes
+                        </h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body" id="repoModalBody">
+                        <!-- Conteúdo do modal será adicionado dinamicamente aqui -->
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
+
     </section>
     <!-- Fim da Seção Portfólio -->
 
