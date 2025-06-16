@@ -1,176 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Arquivos de Estilo -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="scss/timeline.scss">
-
-    <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-
-
-    <!-- Font Awesome CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- JQuery JS CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Popper CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-
-    <!-- Bootstrap JS CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
-        integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Showdown JS CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
-        integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-    <script charset="UTF-8" type="text/javascript" src="js/script.js"></script>
-    <title>Luiz Soares</title>
-</head>
-
-<body class="d-flex flex-column h-100">
-    <!-- Comeco barra de navegacao -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="home">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">&#128126; Luiz Soares </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbarColor01">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#jornada">Minha jornada</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://dev.to/luizhgsoares">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Arquivos de Estilo -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/timeline.css">
+        <link rel="stylesheet" href="scss/timeline.scss">
+        <!-- Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon/favicon-16x16.png"
+        >
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- Font Awesome CSS CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <!-- JQuery JS CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- Popper CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+            integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- Showdown JS CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+            integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script charset="UTF-8" type="text/javascript" src="js/script.js"></script>
+        <title>Luiz Soares</title>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- Comeco barra de navegacao -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="home">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">&#128126; Luiz Soares</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarColor01">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jornada">Minha jornada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Repositórios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- Fim da barra de navegação -->
-
-    <!-- Header-->
-    <header class="bg-primary py-5">
-        <div class="container px-5">
-            <div class="row d-flex-center text-center">
-                <div class="col-sm-12 col-md-6 text-center align-items-center justify-content-center">
-                    <div class="card text-white bg-light" style="max-width: 25rem;">
-                        <div class="card-body">
-                            <img src="img/luizsoares2.jpg" class="card-img-top my-5" alt="">
-                            <h4 class="card-title text-primary">Luiz Henrique Soares</h4>
+        </nav>
+        <!-- Fim da barra de navegação -->
+        <!-- Header-->
+        <header class="bg-primary py-5">
+            <div class="container px-5">
+                <div class="row d-flex-center text-center">
+                    <div class="col-sm-12 col-md-6 text-center align-items-center justify-content-center">
+                        <div class="card text-white bg-light" style="max-width: 25rem;">
+                            <div class="card-body">
+                                <img src="img/luizsoares4.jpg" class="card-img-top my-5" alt="">
+                                <h4 class="card-title text-primary">Luiz Henrique Soares</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-md-offset-1 mx-auto">
-                    <div class="my-5 text-center text-xl-start text-center w-200">
-                        <h2 class="fw-bolder text-white text-center" style="height:150px;">
-                            <span id="target" class=""></span>
-                            <span id="cursor" class=""></span>
-                        </h2>
-                    </div>
-
-                    <div class="container text-center">
-                        <!-- Twitter -->
-                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Twitter">
-                            <a class="btn" href="https://www.twitter.com/luizhgsoares" role="button" target="_blank">
-                                <i class="fab fa-x-twitter fa-2x" style="color: #FFFFFF;"></i>
-                            </a>
-                        </span>
-
-                        <!-- Instagram -->
-                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Instagram">
-                            <a class="btn" href="https://www.instagram.com/luizh.gsoares" role="button" target="_blank">
-                                <i class="fab fa-instagram fa-2x" style="color: #FFFFFF;"></i>
-                            </a>
-                        </span>
-
-                        <!-- Linkedin -->
-                        <span data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Meu perfil no LinkedIn">
-                            <a class="btn" href="https://www.linkedin.com/in/luizh-gsoares" role="button"
-                                target="_blank">
-                                <i class="fab fa-linkedin-in fa-2x" style="color: #FFFFFF;"></i>
-                            </a>
-                        </span>
-
-                        <!-- Github -->
-                        <span data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Meus repositórios no GitHub">
-                            <a class="btn" href="https://www.github.com/luizh-gsoares" role="button" target="_blank">
-                                <i class="fab fa-github fa-2x" style="color: #FFFFFF;"></i>
-                            </a>
-                        </span>
-
-                        <!-- Email -->
-                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enviar um e-mail">
-                            <a class="btn" href="mailto:luizhenriquesoares18@hotmail.com">
-                                <i class="fa fa-envelope fa-2x" style="color: #FFFFFF;"></i>
-                            </a>
-                        </span>
-
-                        <!-- PDF Curriculo -->
-                        <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Download CV">
-                            <a class="btn" href="#" type="button" data-bs-toggle="modal" data-bs-target="#modalcv">
-                                <i class="fa fa-file fa-2x" style="color: #FFFFFF;"></i>
-                            </a>
-                        </span>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="modalcv" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header text-center">
-                                        <h5 class="modal-title" id="exampleModalLabel">Download CV</h5>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- Button to open the first CV -->
-                                        <a class="btn btn-primary" href="downloads/CV_LuizHenriqueSoares_PT.pdf"
-                                            target="_blank" role="button">
-                                            <i class="fa fa-file"></i> CV Português
-                                        </a>
-                                        <!-- Button to open the second CV -->
-                                        <a class="btn btn-primary" href="downloads/CV_LuizHenriqueSoares_EN.pdf"
-                                            target="_blank" role="button">
-                                            <i class="fa fa-file"></i> CV English
-                                        </a>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Fechar</button>
+                    <div class="col-sm-12 col-md-6 col-md-offset-1 mx-auto">
+                        <div class="my-5 text-center text-xl-start text-center w-200">
+                            <h2 class="fw-bolder text-white text-center" style="height:150px;">
+                                <span id="target" class=""></span>
+                                <span id="cursor" class=""></span>
+                            </h2>
+                        </div>
+                        <div class="container text-center">
+                            <!-- Instagram -->
+                            <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Me siga no Instagram">
+                                <a
+                                    class="btn"
+                                    href="https://www.instagram.com/luizh.gsoares"
+                                    role="button"
+                                    target="_blank"
+                                >
+                                    <i class="fab fa-instagram fa-2x" style="color: #FFFFFF;"></i>
+                                </a>
+                            </span>
+                            <!-- Linkedin -->
+                            <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meu perfil no LinkedIn">
+                                <a
+                                    class="btn"
+                                    href="https://www.linkedin.com/in/luizh-gsoares"
+                                    role="button"
+                                    target="_blank"
+                                >
+                                    <i class="fab fa-linkedin-in fa-2x" style="color: #FFFFFF;"></i>
+                                </a>
+                            </span>
+                            <!-- Github -->
+                            <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Meus repositórios no GitHub">
+                                <a
+                                    class="btn"
+                                    href="https://www.github.com/luizh-gsoares"
+                                    role="button"
+                                    target="_blank"
+                                >
+                                    <i class="fab fa-github fa-2x" style="color: #FFFFFF;"></i>
+                                </a>
+                            </span>
+                            <!-- Email -->
+                            <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enviar um e-mail">
+                                <a class="btn" href="mailto:luizhenriquesoares18@hotmail.com">
+                                    <i class="fa fa-envelope fa-2x" style="color: #FFFFFF;"></i>
+                                </a>
+                            </span>
+                            <!-- PDF Curriculo -->
+                            <span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Download CV">
+                                <a
+                                    class="btn"
+                                    href="#"
+                                    type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalcv"
+                                >
+                                    <i class="fa fa-file fa-2x" style="color: #FFFFFF;"></i>
+                                </a>
+                            </span>
+                            <!-- Modal -->
+                            <div
+                                class="modal fade"
+                                id="modalcv"
+                                tabindex="-1"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+                                            <h5 class="modal-title" id="exampleModalLabel">Download CV</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Button to open the first CV -->
+                                            <a
+                                                class="btn btn-primary"
+                                                href="downloads/Curriculo - Luiz Henrique Soares.pdf"
+                                                target="_blank"
+                                                role="button"
+                                            >
+                                                <i class="fa fa-file"></i>
+                                                CV - Português
+                                            </a>
+                                            <!-- Button to open the second CV -->
+                                            <a
+                                                class="btn btn-primary"
+                                                href="downloads/Resume - Luiz Henrique Soares.pdf"
+                                                target="_blank"
+                                                role="button"
+                                            >
+                                                <i class="fa fa-file"></i>
+                                                CV - English
+                                            </a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -179,262 +210,288 @@
                 </div>
             </div>
         </div>
-        </div>
     </header>
     <!-- Fim do Header -->
-
     <!-- Seção Minha Jornada -->
-
     <section class="container py-5 bg-secondary" id="jornada">
         <div class="container px-5">
-
             <div class="text-center">
                 <hr>
                 <h1>Minha Jornada</h1>
                 <hr>
             </div>
-
             <ul class="timeline">
-
                 <li>
                     <div class="timeline-badge">
-                        <span><i class="fa fa-briefcase" aria-hidden="true"></i><span>
-                    </div>
-                    <div class="timeline-panel animated slideInLeft">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Atendente RaiaDrogasil S.A</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p> <i>Novembro de 2018 a Janeiro de 2022-</i>
-                                Iniciei minha carreira como Jovem Aprendiz na empresa RaiaDrogasil durante o Ensino
-                                Médio. Foi uma experiência que contribuiu para meu desenvolvimento pessoal e me abriu
-                                oportunidades através do curso de aprendizagem.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="timeline-inverted">
-                    <div class="timeline-badge">
-                        <span><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>
-                    </div>
-                    <div class="timeline-panel animated slideInRight">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">CIL Taguatinga</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p><i>Fevereiro de 2016 a Dezembro de 2021 - </i>
-                                Conclui o curso de Inglês no Centro Interescolar de Línguas de Taguatinga.</p>
-                        </div>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="timeline-badge">
-                        <span><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>
-                    </div>
-                    <div class="timeline-panel animated slideInLeft">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Escola Técnica de Brasília (ETB)</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p> <i>Janeiro de 2020 a Dezembro de 2022 - </i>
-                                Iniciei minha jornada no desenvolvimento de software na ETB, onde me formei Técnico em
-                                Informática. Aprendi linguagens como Java, PHP, HTML e CSS, que foram a base para
-                                iniciar meus estudos nessa área.</p>
-                        </div>
-                    </div>
-                </li>
-
-
-                <li class="timeline-inverted">
-                    <div class="timeline-badge">
-                        <span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span><span>
-                    </div>
-                    <div class="timeline-panel animated slideInRight">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Universidade de Brasília (UnB)</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p><i>Janeiro de 2022 - </i>Ingressei no curso de Engenharia de Software na
-                                Universidade de Brasília para seguir minha jornada como Desenvolvedor de Software.
-                            </p>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="timeline-badge">
-                        <span><i class="fa fa-briefcase" aria-hidden="true"></i><span>
-                    </div>
-                    <div class="timeline-panel animated slideInLeft">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Estágio - Programador .NET</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p><i>Julho de 2022 - </i> Tive a oportunidade de trabalhar com uma variedade de ferramentas
-                                importantes para O desenvolvimento de software, como O Visual Studio 2022, .NET,
-                                ASP.NET,
-                                C#, EntityFramework, Microsoft SQL Server, Docker e Git.
-                </li>
-
-                <li class="timeline-inverted">
-                    <div class="timeline-badge">
-                        <span><i class="fa fa-rocket" aria-hidden="true"></i><span>
-                    </div>
-                    <div class="timeline-panel animated slideInRight">
-                        <div class="timeline-heading">
-
-                            <h4 class="timeline-title">Desenvolvedor Freelancer</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p><i>Outubro de 2022 - </i>
-                                Participo de projetos em colaboração com um grupo de amigos, buscando aprimorar meus
-                                conhecimentos e desenvolver minhas habilidades profissionais.</p>
-                        </div>
-                </li>
-
-                <li class="clearfix" style="float: none;"></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Fim Seção Minha Jornada -->
-
-    <!-- Seção Portfólio -->
-    <section class="bg-primary" id="portfolio">
-        <div class="container py-5">
-            <div class="container px-5">
-                <div class="text-white text-center">
-                    <hr>
-                    <h1 class="text-center text-white">Portfólio</h1>
-                    <hr>
-                    <p class="my-5 text-white">Abaixo você consegue conferir os meus repositórios do GitHub: </p>
-                    <div id="filter-topics" class="my-5"></div>
-                </div>
-
-
-
-                <div id="repo-container" class="row row-cols-1 row-cols-md-3 g-4">
-                </div>
-
-                <div id="error-message" class="text-center"></div>
-            </div>
-        </div>
-
-
-        <div class="my-5 text-center">
-            <a class="btn btn-secondary" href="https://github.com/luizh-gsoares" target="_blank"><i
-                    class="fa-brands fa-github"></i> GitHub</a>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="repoModal" tabindex="-1" aria-labelledby="repoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="repoModalLabel"> <i class="fa-solid fa-circle-info"></i> Detalhes
-                        </h5>
-
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body" id="repoModalBody">
-                        <!-- Conteúdo do modal será adicionado dinamicamente aqui -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- Fim da Seção Portfólio -->
-
-    <!-- Seção Contatos -->
-    <section class="bg-secondary" id="contato">
-        <div class="container py-5">
-            <div class="container px-5">
-                <hr>
-                <h1 class="text-center">Contatos</h1>
-                <hr>
-
-                <p class="mt-5 text-center">Ficou interessado em algum dos meus projetos e quer trocar aquela ideia
-                    comigo? Preencha o formulário abaixo! :)</p>
-
-                <form action="https://formspree.io/f/mbjbyebb" method="POST">
-                    <div class="form-group">
-                        <label class="col-xs-6 form-label mt-4" for="full-name">Nome</label>
-                        <input type="text" name="name" class="form-control" placeholder="Digite o seu nome."
-                            required="">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="col-xs-6 form-label mt-4" for="telefone">Telefone</label>
-                        <input type="text" name="telefone" class="form-control" placeholder="Digite o seu telefone.">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label mt-4" for="email">Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="Digite seu email."
-                            required="">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label mt-4" for="message">Mensagem</label>
-                        <textarea class="form-control" name="message" rows="7" placeholder="Digite aqui a sua mensagem."
-                            required=""></textarea>
-                    </div>
-
-                    <!-- your other form fields go here -->
-                    <button type="submit" class="btn btn-primary mt-5">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- Fim da Seção Contatos -->
-
-    <!-- Footer -->
-    <footer class="bg-primary text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com/luizhgsoares"
-                    role="button"><i class="fab fa-x-twitter"></i></a>
-
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/luizh.gsoares"
-                    role="button"><i class="fab fa-instagram"></i></a>
-
-                <!-- LinkedIn -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/luizh-gsoares"
-                    role="button"><i class="fab fa-linkedin-in"></i></a>
-
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/luizh-gsoares"
-                    role="button"><i class="fab fa-github"></i></a>
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright:
-            <a class="text-white" href="https://luizh-gsoares.github.io/">Luiz Soares</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Fim do Footer -->
-
-    <script>
+                        <span>
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            <span>
+                            </div>
+                            <div class="timeline-panel animated slideInLeft">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Atendente RaiaDrogasil S.A</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        <i>Novembro de 2018 a Janeiro de 2022 -</i>
+                                        Trabalhei como Jovem Aprendiz e atendente de caixa na RaiaDrogasil, adquirindo experiência em atendimento ao cliente e operações de caixa.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge">
+                                <span>
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <span>
+                                    </div>
+                                    <div class="timeline-panel animated slideInRight">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">CIL Taguatinga</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                                <i>Fevereiro de 2016 a Dezembro de 2021 -</i>
+                                                Concluí o curso de Inglês no Centro Interescolar de Línguas de Taguatinga.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge">
+                                        <span>
+                                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                            <span>
+                                            </div>
+                                            <div class="timeline-panel animated slideInLeft">
+                                                <div class="timeline-heading">
+                                                    <h4 class="timeline-title">Escola Técnica de Brasília (ETB)</h4>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>
+                                                        <i>Janeiro de 2020 a Dezembro de 2022 -</i>
+                                                        Formei-me Técnico em Informática na ETB, com foco em desenvolvimento web utilizando Java e PHP.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge">
+                                                <span>
+                                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                </span>
+                                                <span>
+                                                </div>
+                                                <div class="timeline-panel animated slideInRight">
+                                                    <div class="timeline-heading">
+                                                        <h4 class="timeline-title">Universidade de Brasília (UnB)</h4>
+                                                    </div>
+                                                    <div class="timeline-body">
+                                                        <p>
+                                                            <i>Janeiro de 2022 -</i>
+                                                            Ingressei  no curso de bacharelado em Engenharia de Software na Universidade de Brasília (UnB).
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="timeline-badge">
+                                                    <span>
+                                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                                        <span>
+                                                        </div>
+                                                        <div class="timeline-panel animated slideInLeft">
+                                                            <div class="timeline-heading">
+                                                                <h4 class="timeline-title">Estagiário de Engenharia de Software (CONFEA)</h4>
+                                                            </div>
+                                                            <div class="timeline-body">
+                                                                <p>
+                                                                    <i>Julho de 2022 a Junho de 2024-</i>
+                                                                    Atuei como estagiário de Engenharia de Software no Conselho Federal de Engenharia e Agronomia - CONFEA, utilizando ferramentas como .NET Framework, C#, Entity Framework, ADO.NET, Identity e Git.
+                                                                    Participei do desenvolvimento e documentação do sistema de API Profissional, Sistema de Votação do 11 ° CNP e o sistema de
+                                                                    <a href="https://normativos.confea.org.br/" target="_blank" rel="noopener noreferrer">Normativos</a>
+                                                                    .
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="timeline-inverted">
+                                                        <div class="timeline-badge">
+                                                            <span>
+                                                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                                                <span>
+                                                                </div>
+                                                                <div class="timeline-panel animated slideInRight">
+                                                                    <div class="timeline-heading">
+                                                                        <h4 class="timeline-title">Estagiário de Engenharia de Software (CAIXA)</h4>
+                                                                    </div>
+                                                                    <div class="timeline-body">
+                                                                        <p>
+                                                                            <i> Julho de 2024 -</i>
+                                                                            Atuo como estagiário de Engenharia de Software na Caixa Econômica Federal (CAIXA), 
+                                                                            participando de projetos em equipe na comunidade de Habitação e desenvolvendo funcionalidades
+                                                                            para o sistema
+                                                                            <a href="https://www.caixa.gov.br/voce/habitacao/imoveis-venda/Paginas/default.aspx" target="_blank" rel="noopener noreferrer">SIMOV (Imóveis à Venda)</a>
+                                                                            e programa
+                                                                            <a href="https://www.caixa.gov.br/voce/habitacao/minha-casa-minha-vida/mcmv-reconstrucao/Paginas/default.aspx" target="_blank" rel="noopener noreferrer">Minha Casa Minha Vida Reconstrução RS</a>
+                                                                            .
+                                                                            Atuo com tecnologias como .NET, C#, Node.Js, Angular, AzureDevOps e Git.
+                                                                        </p>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="clearfix" style="float: none;"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </section>
+                                                    <!-- Fim Seção Minha Jornada -->
+                                                    <!-- Seção Portfólio -->
+                                                    <section class="bg-primary" id="portfolio">
+                                                        <div class="container py-5">
+                                                            <div class="container px-5">
+                                                                <div class="text-white text-center">
+                                                                    <hr>
+                                                                    <h1 class="text-center text-white">Portfólio</h1>
+                                                                    <hr>
+                                                                    <p class="my-5 text-white">Abaixo você consegue conferir os meus repositórios do GitHub:</p>
+                                                                    <div id="filter-topics" class="my-5"></div>
+                                                                </div>
+                                                                <div id="repo-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
+                                                                <div id="error-message" class="text-center"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my-5 text-center">
+                                                            <a class="btn btn-secondary" href="https://github.com/luizh-gsoares" target="_blank">
+                                                                <i class="fa-brands fa-github"></i>
+                                                                GitHub
+                                                            </a>
+                                                        </div>
+                                                        <!-- Modal -->
+                                                        <div
+                                                            class="modal fade"
+                                                            id="repoModal"
+                                                            tabindex="-1"
+                                                            aria-labelledby="repoModalLabel"
+                                                            aria-hidden="true"
+                                                        >
+                                                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="repoModalLabel">
+                                                                            <i class="fa-solid fa-circle-info"></i>
+                                                                            Detalhes
+                                                                        </h5>
+                                                                        <button
+                                                                            type="button"
+                                                                            class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Fechar"
+                                                                        ></button>
+                                                                    </div>
+                                                                    <div class="modal-body" id="repoModalBody">
+                                                                        <!-- Conteúdo do modal será adicionado dinamicamente aqui --></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <!-- Fim da Seção Portfólio -->
+                                                    <!-- Seção Contatos -->
+                                                    <section class="bg-secondary" id="contato">
+                                                        <div class="container py-5">
+                                                            <div class="container px-5">
+                                                                <hr>
+                                                                <h1 class="text-center">Contatos</h1>
+                                                                <hr>
+                                                                <p class="mt-5 text-center">
+                                                                    Ficou interessado em algum dos meus projetos e quer trocar aquela ideia
+                    comigo? Preencha o formulário abaixo! :)
+                                                                </p>
+                                                                <form action="https://formspree.io/f/mbjbyebb" method="POST">
+                                                                    <div class="form-group">
+                                                                        <label class="col-xs-6 form-label mt-4" for="full-name">Nome</label>
+                                                                        <input
+                                                                            type="text"
+                                                                            name="name"
+                                                                            class="form-control"
+                                                                            placeholder="Digite o seu nome."
+                                                                            required=""
+                                                                        >
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-xs-6 form-label mt-4" for="telefone">Telefone</label>
+                                                                        <input
+                                                                            type="text"
+                                                                            name="telefone"
+                                                                            class="form-control"
+                                                                            placeholder="Digite o seu telefone."
+                                                                        >
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label mt-4" for="email">Email</label>
+                                                                        <input
+                                                                            type="email"
+                                                                            name="email"
+                                                                            class="form-control"
+                                                                            placeholder="Digite seu email."
+                                                                            required=""
+                                                                        >
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label mt-4" for="message">Mensagem</label>
+                                                                        <textarea
+                                                                            class="form-control"
+                                                                            name="message"
+                                                                            rows="7"
+                                                                            placeholder="Digite aqui a sua mensagem."
+                                                                            required=""
+                                                                        ></textarea>
+                                                                    </div>
+                                                                    <!-- your other form fields go here -->
+                                                                    <button type="submit" class="btn btn-primary mt-5">Enviar</button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <!-- Fim da Seção Contatos -->
+                                                    <!-- Footer -->
+                                                    <footer class="bg-primary text-center text-white">
+                                                        <!-- Grid container -->
+                                                        <div class="container p-4 pb-0">
+                                                            <!-- Section: Social media -->
+                                                            <section class="mb-4">
+                                                                <!-- Twitter -->
+                                                                <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com/luizhgsoares" role="button">
+                                                                    <i class="fab fa-x-twitter"></i>
+                                                                </a>
+                                                                <!-- Instagram -->
+                                                                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/luizh.gsoares" role="button">
+                                                                    <i class="fab fa-instagram"></i>
+                                                                </a>
+                                                                <!-- LinkedIn -->
+                                                                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/luizh-gsoares" role="button">
+                                                                    <i class="fab fa-linkedin-in"></i>
+                                                                </a>
+                                                                <!-- Github -->
+                                                                <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/luizh-gsoares" role="button">
+                                                                    <i class="fab fa-github"></i>
+                                                                </a>
+                                                            </section>
+                                                            <!-- Section: Social media -->
+                                                        </div>
+                                                        <!-- Grid container -->
+                                                        <!-- Copyright -->
+                                                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                                                            © 2022 Copyright:
+                                                            <a class="text-white" href="https://luizh-gsoares.github.io/">Luiz Soares</a>
+                                                        </div>
+                                                        <!-- Copyright -->
+                                                    </footer>
+                                                    <!-- Fim do Footer -->
+                                                    <script>
         buscarRepositorios();
-    </script>
-
-    <!-- Arquivos Javascript -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/typingeffect.js"> </script>
-    <script type="text/javascript" src="js/filter.js"></script>
-</body>
-
-</html>
+                                                    </script>
+                                                    <!-- Arquivos Javascript -->
+                                                    <script type="text/javascript" src="js/bootstrap.js"></script>
+                                                    <script type="text/javascript" src="js/typingeffect.js"></script>
+                                                    <script type="text/javascript" src="js/filter.js"></script>
+                                                </body>
+                                            </html>

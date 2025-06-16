@@ -40,8 +40,7 @@
   $dark-grey: #888888;
   $blue: steelblue;
   $orange: orange;
-  $green: #097054;
-  
+
   .timeline {
     position: relative;
     margin-top: 15px;
@@ -227,7 +226,7 @@
 
   .timeline > li:nth-child(6) {
     .timeline-badge {
-      background-color: $green;
+      background-color: $orange;
     }
   }
   
@@ -290,19 +289,23 @@
   }
 
   .timeline > li:nth-child(2) {
-    margin-top: 105px; 
-  }
-  
-  .timeline > li:nth-child(3) {
-    margin-top: 10px; 
-  }
-  
-  .timeline > li:nth-child(4) {
     margin-top: 100px; 
   }
   
-  .timeline > li:nth-child(5) {
-    margin-top: -10px; 
-  }  
-    
+  .timeline > li:nth-child(3) {
+    margin-top: 25px; 
   }
+  
+  .timeline > li:nth-child(4) {
+    margin-top: 75px; 
+  }
+  
+  .timeline > li:nth-child(5) {
+    margin-top: 50px; 
+  } 
+  
+  .timeline > li:nth-child(6) {
+    margin-top: 75px; 
+  }  
+
+}

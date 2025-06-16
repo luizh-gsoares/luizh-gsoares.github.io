@@ -1,19 +1,15 @@
-/* line 45, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline {
   position: relative;
   margin-top: 15px;
   padding: 20px 0 70px;
   list-style: none;
 }
-
 @media screen and (min-width: 1200px) {
-  /* line 45, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   .timeline {
     margin-top: 105px;
   }
 }
 
-/* line 54, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline:before {
   top: 40px;
   bottom: 0;
@@ -25,7 +21,6 @@
   margin-left: -1.5px;
 }
 
-/* line 65, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
@@ -34,31 +29,26 @@
   clear: left;
 }
 
-/* line 73, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:before,
 .timeline > li:after {
   content: " ";
   display: table;
 }
 
-/* line 78, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:after {
   clear: both;
 }
 
-/* line 81, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:before,
 .timeline > li:after {
   content: " ";
   display: table;
 }
 
-/* line 86, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:after {
   clear: both;
 }
 
-/* line 89, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li > .timeline-panel {
   width: calc(100% - 70px);
   width: -moz-calc(100% - 70px);
@@ -68,7 +58,6 @@
   position: relative;
 }
 
-/* line 98, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;
@@ -82,7 +71,6 @@
   content: " ";
 }
 
-/* line 111, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li > .timeline-panel:after {
   position: absolute;
   top: 27px;
@@ -96,7 +84,6 @@
   content: " ";
 }
 
-/* line 124, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li > .timeline-badge {
   color: #fff;
   width: 50px;
@@ -115,12 +102,10 @@
   border-bottom-left-radius: 50%;
 }
 
-/* line 142, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
 }
 
-/* line 145, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
@@ -128,7 +113,6 @@
   right: auto;
 }
 
-/* line 151, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
@@ -136,7 +120,6 @@
   right: auto;
 }
 
-/* line 158, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline-title {
   margin-top: 20px;
   padding-left: 20px;
@@ -145,83 +128,68 @@
   color: #888888;
 }
 
-/* line 165, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline-body > p,
 .timeline-body > ul {
   padding: 0 20px 20px;
   margin-bottom: 0;
 }
 
-/* line 170, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline-body > p + p {
   margin-top: 5px;
 }
 
-/* line 173, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline-footer {
   padding: 20px;
   background-color: #e3e2e1;
 }
 
-/* line 177, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline-footer > a {
   cursor: pointer;
   text-decoration: none;
 }
 
-/* line 182, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li.timeline-inverted {
   float: left;
   clear: left;
   margin-top: 0;
 }
 
-/* line 188, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li.timeline-inverted > .timeline-badge {
   left: 0;
 }
 
-/* line 192, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline-heading img {
   margin: 0 auto;
 }
 
-/* line 199, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:nth-child(1) .timeline-badge {
   background-color: orange;
 }
 
-/* line 205, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:nth-child(2) .timeline-badge {
   background-color: steelblue;
 }
 
-/* line 211, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:nth-child(3) .timeline-badge {
   background-color: steelblue;
 }
 
-/* line 217, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:nth-child(4) .timeline-badge {
   background-color: steelblue;
 }
 
-/* line 223, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:nth-child(5) .timeline-badge {
   background-color: orange;
 }
 
-/* line 229, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
 .timeline > li:nth-child(6) .timeline-badge {
-  background-color: #097054;
+  background-color: orange;
 }
 
 @media (min-width: 768px) {
-  /* line 238, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   ul.timeline:before {
     left: 50%;
   }
-  /* line 242, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   .timeline > li {
     margin-bottom: 20px;
     position: relative;
@@ -229,7 +197,6 @@
     float: left;
     clear: left;
   }
-  /* line 250, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   ul.timeline > li > .timeline-badge {
     right: 0;
     margin-right: -35px;
@@ -237,54 +204,47 @@
     height: 70px;
     line-height: 70px;
   }
-  /* line 258, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   .timeline > li.timeline-inverted > .timeline-badge {
     left: -35px;
   }
-  /* line 262, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   ul.timeline > li > .timeline-panel {
     float: left;
     margin-top: 10px;
   }
-  /* line 267, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   ul.timeline > li > .timeline-panel:before {
     border-left-width: 15px;
     border-right-width: 0;
     right: -15px;
     left: auto;
   }
-  /* line 274, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   ul.timeline > li > .timeline-panel:after {
     border-left-width: 14px;
     border-right-width: 0;
     right: -14px;
     left: auto;
   }
-  /* line 281, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   .timeline > li.timeline-inverted {
     float: right;
     clear: right;
     margin-top: 70px;
   }
-  /* line 288, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   .timeline > li:nth-child(1) {
     margin-top: 0px;
   }
-  /* line 292, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
   .timeline > li:nth-child(2) {
-    margin-top: 105px;
-  }
-  /* line 296, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
-  .timeline > li:nth-child(3) {
-    margin-top: 10px;
-  }
-  /* line 300, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
-  .timeline > li:nth-child(4) {
     margin-top: 100px;
   }
-  /* line 304, ../../Documents/GitHub/luizh-gsoares.github.io/scss/timeline.scss */
+  .timeline > li:nth-child(3) {
+    margin-top: 25px;
+  }
+  .timeline > li:nth-child(4) {
+    margin-top: 75px;
+  }
   .timeline > li:nth-child(5) {
-    margin-top: -10px;
+    margin-top: 50px;
+  }
+  .timeline > li:nth-child(6) {
+    margin-top: 75px;
   }
 }
 
