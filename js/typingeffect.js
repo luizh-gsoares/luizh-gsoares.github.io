@@ -83,13 +83,15 @@
 
 $("#target").teletype({
   text: [
-    " Oi, eu sou o Luiz Henrique Soares, Desenvolvedor Junior .NET / ASP.NET Core",
-    " Jovem padawan em Desenvolvimento de Software.",
+    " Oi, eu sou o Luiz Henrique Soares, Desenvolvedor de Software em formação.",
+    " Estagiário de Engenharia de Software na CAIXA.",
+    " Estudante de Engenharia de Software na UnB.",
+    " Especialista em desenvolvimento .NET Core e Angular.",
     " Apaixonado no universo Star Wars e Jedi nas horas vagas.",
     " Fã de carteirinha da banda The Lumineers.",
     " Construtor de casinhas medievais no Minecraft.",
-    " Gosto de aprender novas tecnologias e ferramentas.",
-    " Sempre em busca de novos desafios.",
+    " Sempre em busca de novos desafios e aprendizado contínuo.",
+    " Entusiasta de clean code e boas práticas de desenvolvimento.",
     " Por fim, amo café :)",
   ],
 });
